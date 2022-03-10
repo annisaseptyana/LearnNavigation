@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learn Navigation</string>
+    <string name="action_bar">Action Bar</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="bottom_navigation">Bottom Navigation</string>
+    <string name="tab_layout">Tab Layout</string>
+</resources>
