@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/action_bar"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/button4" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_navigation_drawer"
+        app:layout_constraintEnd_toEndOf="@+id/btn_navigation_drawer"
+        app:layout_constraintStart_toStartOf="@+id/btn_navigation_drawer" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_navigation_drawer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/navigation_drawer"

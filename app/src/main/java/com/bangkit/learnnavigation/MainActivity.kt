@@ -14,9 +14,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.btnActionBar.setOnClickListener{
+
+        binding.btnActionBar.setOnClickListener {
             val moveToActionBar = Intent(this@MainActivity, ActionBar::class.java)
             startActivity(moveToActionBar)
+        }
+
+        binding.btnNavigationDrawer.setOnClickListener {
+            val moveToNavigationDrawer = Intent(this@MainActivity, NavigationDrawer::class.java)
+            startActivity(moveToNavigationDrawer)
         }
     }
 }
