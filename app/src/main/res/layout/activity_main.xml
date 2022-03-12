@@ -20,12 +20,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/navigation_drawer"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/btn_bottom_nav"
+        app:layout_constraintStart_toStartOf="@+id/btn_bottom_nav" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_bottom_nav"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bottom_navigation"
@@ -35,11 +35,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/btn_tab_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tab_layout"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintEnd_toEndOf="@+id/btn_bottom_nav"
+        app:layout_constraintStart_toStartOf="@+id/btn_bottom_nav"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bottom_nav" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

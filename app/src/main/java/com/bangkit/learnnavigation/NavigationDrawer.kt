@@ -45,7 +45,7 @@ class NavigationDrawer : AppCompatActivity() {
             .into(profileCircleImageView)
         // Don't change below
         appBarConfiguration = AppBarConfiguration(setOf(
-            // Nambah fragment buat di sidebar
+            // Nambah layout buat di sidebar
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_cart), drawerLayout)
 
         val navController = findNavController(R.id.nav_host_fragment_content_navigation_drawer)

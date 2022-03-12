@@ -24,5 +24,15 @@ class MainActivity : AppCompatActivity() {
             val moveToNavigationDrawer = Intent(this@MainActivity, NavigationDrawer::class.java)
             startActivity(moveToNavigationDrawer)
         }
+
+        binding.btnBottomNav.setOnClickListener {
+            val moveToBottomNavigation = Intent(this@MainActivity, BottomNavigation::class.java)
+            startActivity(moveToBottomNavigation)
+        }
+
+        binding.btnTabLayout.setOnClickListener {
+            val moveToTabLayout = Intent(this@MainActivity, TabLayout::class.java)
+            startActivity(moveToTabLayout)
+        }
     }
 }
