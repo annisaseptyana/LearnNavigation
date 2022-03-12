@@ -1,21 +1,22 @@
 package com.bangkit.learnnavigation
 
+import android.os.Bundle
+import android.provider.Settings.Global.putInt
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class SectionsPageAdapter(activity: AppCompatActivity):FragmentStateAdapter(activity) {
     override fun getItemCount(): Int {
-        return 2
+        return 3
     }
 
     override fun createFragment(position: Int): Fragment {
-        var fragment: Fragment? = null
+        val fragment = HomeFragment()
 //        Choose tab
-        when (position) {
-            0 -> fragment = HomeFragment()
-            1 -> fragment = ProfileFragment()
+        fragment.arguments = Bundle().apply {
+            putInt(HomeFragment.ARG_SECTION_NUMBER, position + 1)
         }
-        return fragment as Fragment
+        return fragment
     }
 }
